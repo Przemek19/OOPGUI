@@ -1,0 +1,21 @@
+<meta>
+  <oop>true</oop>
+
+  <!--________________________ASSETS________________________-->
+  <file src="assets/colors.json" cache="false" />
+
+  <file src="assets/fonts/Quicksand-Regular.ttf" cache="false" />
+  <file src="assets/fonts/Quicksand-Light.ttf" cache="false" />
+  <file src="assets/fonts/Quicksand-Bold.ttf" cache="false" />
+
+  <file src="assets/fonts/Opensans-Regular.ttf" cache="false" />
+  <file src="assets/fonts/Opensans-Light.ttf" cache="false" />
+  <file src="assets/fonts/Opensans-Bold.ttf" cache="false" />
+
+  <!--______________________________________________________-->
+
+  <file src="config.lua" cache="false" />
+
+  <script src="main_c.lua" type="client" cache="false" />
+  <export function="initGUI" type="client" />
+</meta>

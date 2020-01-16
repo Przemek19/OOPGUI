@@ -1,0 +1,184 @@
+<html>
+  <head>
+    <title>OOP GUI by Pevo - Documentation</title>
+    <link rel="stylesheet" href="beauty.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav nav-xs-block purple padding_l">
+        <a href="index.html"><button class="m radius_full">Home</button></a>
+        <li><a href="download.html">Download</a></li>
+        <li><a href="documentation.html">Documentation</a></li>
+        <li><a href="donate.html">Donate</a></li>
+      </div>
+    </nav>
+
+    <div class="padding_l">
+      <div class="container flex-l flex-m">
+        <div class="col textbox padding_m col-l-8 col-m-10 col-s-12 col-xs-12 dark" style="margin: auto">
+          <h1>Documentation</h1><br />
+          <div style="padding: 16px">
+            <button class="gray l docbttn" id="types_bttn">Elements</button><button
+              class="gray l docbttn" id="parameters_bttn">Parameters</button><button class="gray l
+              docbttn" id="variables_bttn">Variables</button><button class="gray l docbttn" id="usefulfunctions_bttn">Useful
+              functions</button><br />
+
+            <div id="types" class="docbox col textbox padding_m col-l-12 col-m-12 col-s-12 col-xs-12 gray">
+              <h2>Elements</h2>
+              <ul>
+                <li><b>Rectangle</b><br>123</li>
+                <li><b>Button</b></li>
+                <li><b>Checkbox</b></li>
+                <li><b>Editbox</b></li>
+                <li><b>Text</b></li>
+              </ul>
+            </div>
+            <div id="parameters" class="docbox col textbox padding_m col-l-12 col-m-12 col-s-12 col-xs-12 gray">
+              <h2>Parameters of element</h2>
+              <ul>
+                <li>Legend</li>
+                <li>
+                  <span class="docp"><span class="t">[type of parameter]</span> parameter</span> - Required parameter<br />
+                  <span class="docpo"><span class="t">[type of parameter]</span> [parameter]</span> - An optional parameter
+                </li>
+              </ul><br /><br />
+              <ul>
+                <li>
+                  <span class="docp"><span class="t">[table]</span> position</span><br>
+                  <ul>
+                    <li>
+                      <span class="docpo"><span class="t">[float]</span> x</span> - Horizontal position of element in px<br />
+                      <span class="docpo"><span class="t">[float]</span> y</span> - Vertical position of element in px
+                    </li>
+                  </ul>
+                </li><br />
+                <li>
+                  <span class="docp"><span class="t">[table]</span> size</span><br>
+                  <ul>
+                    <li>
+                      <span class="docp"><span class="t">[float]</span> width</span> - Width of element (horizontal size) in px<br />
+                      <span class="docp"><span class="t">[float]</span> height</span> - Height of element (vertical size) in px
+                    </li>
+                  </ul>
+                </li><br />
+                <li>
+                  <span class="docpo"><span class="t">[table]</span> color</span><br>
+                  <ul>
+                    <li>
+                      <span class="docp"><span class="t">[table]</span> background</span> - RGB color of background in table (ex. {255, 255, 255, 200})
+                    </li>
+                    <li>
+                      <span class="docp"><span class="t">[table]</span> text</span> - RGB color of text in table (ex. {255, 255, 255, 200})
+                    </li>
+                    <li>
+                      <span class="docp"><span class="t">[table]</span> placeholder</span> - RGB color of placeholder in table (ex. {255, 255, 255, 200})
+                    </li>
+                    <li>
+                      <span class="docp"><span class="t">[table]</span> primary</span> - RGB color of primary in table (ex. {255, 255, 255, 200})
+                    </li>
+                    <li>
+                      <span class="docp"><span class="t">[table]</span> inactive</span> - RGB color of inactive in table (ex. {255, 255, 255, 200})
+                    </li>
+                    <li>
+                      <span class="docpo"><span class="t">[table]</span> focus</span> - RGB color of focus in table (ex. {255, 255, 255, 200})
+                    </li>
+                    <li>
+                      <span class="docpo"><span class="t">[table]</span> hover</span> - RGB color of hover in table (ex. {255, 255, 255, 200})
+                    </li>
+                  </ul>
+                </li><br />
+                <li>
+                  <span class="docp"><span class="t">[table]</span> font</span><br>
+                  <ul>
+                    <li>
+                      <span class="docpo"><span class="t">[string]</span> name</span> - Name of font<br />
+                      <span class="docpo"><span class="t">[float]</span> size</span> - Size of font
+                    </li>
+                  </ul>
+                </li><br />
+              </ul>
+            </div>
+            <div id="variables" class="docbox col textbox padding_m col-l-12 col-m-12 col-s-12 col-xs-12 gray">
+              456
+            </div>
+            <div id="usefulfunctions" class="docbox col textbox padding_m col-l-12 col-m-12 col-s-12 col-xs-12 gray">
+              654
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+    </div><br />
+    <footer>
+      <div class="footer purple padding_l">
+        OOP GUI by Pevo &copy 2019
+      </div>
+    </footer>
+
+
+    <script>
+      var currentPage = "types"
+
+      var typesButton = document.getElementById("types_bttn")
+      var parametersButton = document.getElementById("parameters_bttn")
+      var variablesButton = document.getElementById("variables_bttn")
+      var usefulfunctionsButton = document.getElementById("usefulfunctions_bttn")
+
+      var types = document.getElementById("types")
+      var parameters = document.getElementById("parameters")
+      var variables = document.getElementById("variables")
+      var usefulfunctions = document.getElementById("usefulfunctions")
+
+      typesButton.className = "gray l docbttn docbttnclicked"
+      parameters.style.display = "none"
+      variables.style.display = "none"
+      usefulfunctions.style.display = "none"
+
+      typesButton.onclick = function() {
+        typesButton.className = "gray l docbttn docbttnclicked"
+        parametersButton.className = "gray l docbttn"
+        variablesButton.className = "gray l docbttn"
+        usefulfunctionsButton.className = "gray l docbttn"
+        types.style.display = "inline-block"
+        parameters.style.display = "none"
+        variables.style.display = "none"
+        usefulfunctions.style.display = "none"
+      }
+
+      parametersButton.onclick = function() {
+        typesButton.className = "gray l docbttn"
+        parametersButton.className = "gray l docbttn docbttnclicked"
+        variablesButton.className = "gray l docbttn"
+        usefulfunctionsButton.className = "gray l docbttn"
+        types.style.display = "none"
+        parameters.style.display = "inline-block"
+        variables.style.display = "none"
+        usefulfunctions.style.display = "none"
+      }
+      variablesButton.onclick = function() {
+        typesButton.className = "gray l docbttn"
+        parametersButton.className = "gray l docbttn"
+        variablesButton.className = "gray l docbttn docbttnclicked"
+        usefulfunctionsButton.className = "gray l docbttn"
+        types.style.display = "none"
+        parameters.style.display = "none"
+        variables.style.display = "inline-block"
+        usefulfunctions.style.display = "none"
+      }
+
+      usefulfunctionsButton.onclick = function() {
+        typesButton.className = "gray l docbttn"
+        parametersButton.className = "gray l docbttn"
+        variablesButton.className = "gray l docbttn"
+        usefulfunctionsButton.className = "gray l docbttn docbttnclicked"
+        types.style.display = "none"
+        parameters.style.display = "none"
+        variables.style.display = "none"
+        usefulfunctions.style.display = "inline-block"
+      }
+
+    </script>
+  </body>
+</html>

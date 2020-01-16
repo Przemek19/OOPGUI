@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #111;
+}
+
+:root {
+  --defaultColor: #c0392b;
+  --defaultColorHover: #e74c3c;
+  --defaultColorHover2: #F94141;
+}
+
+.purple {background: #c0392b; color: white; border-color: #c0392b;} .purple:hover {border-color: #c0392b;}
+
+h1, h2 {
+  margin: 0;
+  padding: 16px;
+}
+
+p {
+  margin: 0;
+  padding: 16px;
+  padding-top: 0;
+}
+
+.docbttn {
+  padding: 24px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin: 0;
+  border: 0;
+  background: var(--defaultColorHover);
+  color: #EEE;
+}
+
+.docbttn:hover {
+  border: 0;
+  background: var(--defaultColor);
+}
+
+.docbttnclicked {
+  background: var(--defaultColor);
+}
+
+.docbox {
+  border: 2px solid var(--defaultColor);
+  background: #131313;
+  font-size: 22px;
+  color: #EEE;
+}
+
+.docbox:hover {
+  border: 2px solid var(--defaultColor);
+}
+
+.docp {
+  color: var(--defaultColor);
+}
+
+.docpo {
+  color: #f1c40f;
+}
+
+ul > li {
+  list-style-type: none;
+  margin-left: -8px;
+}
+
+.t {
+  color: #3498db;
+  font-weight: 400;
+}
+
+.dark {
+  background: transparent;
+}
+
+.pr {
+  background: #181818;
+  color: #EEE;
+}
+
+nav > div > a > button {
+  background: var(--defaultColorHover);
+  color: #EEE;
+  border: 0;
+}
+
+nav > div > a > button:hover {
+  background: var(--defaultColorHover2);
+  border: 0;
+}
